@@ -36,13 +36,17 @@ var app = {
         //get view port height
         var o_vph = $(window).height();
         var vph = parseInt(o_vph) - 64;
-        
-        //$(".home-content > .section").css('height', o_vph+'px');
+        var vpw = $(window).width();
+        //if not desktop - make height dynamic
+        if(vpw < 800) {
+            $(".home-content > .section").css('height', o_vph+'px');
 
-        $(window).on('resize', function() {
+            $(window).on('resize', function() {
 
-            //$(".home-content > .section").css('height', o_vph+'px');
-        });
+                $(".home-content > .section").css('height', o_vph+'px');
+            });
+
+        }
     },
 
     header_typed_subtitle: function () {
