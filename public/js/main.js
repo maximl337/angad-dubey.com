@@ -39,14 +39,28 @@ var app = {
         var vpw = $(window).width();
         //if not desktop - make height dynamic
         if(vpw < 800) {
+
             $(".home-content > .section").css('height', o_vph+'px');
 
-            $(window).on('resize', function() {
 
-                $(".home-content > .section").css('height', o_vph+'px');
-            });
+        } else {
+
+            $(".home-content > .section").css('min-height', o_vph+'px');
 
         }
+
+        $(window).on('resize', function() {
+
+            if(vpw < 800) {
+
+                $(".home-content > .section").css('height', o_vph+'px');
+
+            } else {
+
+                $(".home-content > .section").css('min-height', o_vph+'px');
+            }
+
+        });
     },
 
     header_typed_subtitle: function () {
