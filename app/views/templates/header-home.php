@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qk_vdr43Up_KguWimX1zm8Ht93gXZV3ByK4xbX0C9k8" />
     <title>Angad Dubey - Developer, Designer</title>
     <meta name="description" content="Angad Dubey - Web Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
